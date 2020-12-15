@@ -344,6 +344,14 @@ namespace TMPro
         [SerializeField]
         protected TMP_StyleSheet m_StyleSheet;
 
+        public string Key
+        {
+            get { return m_key; }
+            set { m_key = value; }
+        }
+        [SerializeField]
+        protected string m_key = "";
+
         /// <summary>
         ///
         /// </summary>
