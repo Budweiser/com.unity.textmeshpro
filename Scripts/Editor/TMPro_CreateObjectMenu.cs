@@ -127,6 +127,10 @@ namespace TMPro.EditorUtilities
                 {
                     textComponent.rectTransform.sizeDelta = TMP_Settings.defaultTextMeshProUITextContainerSize;
                 }
+
+                //默认关闭设置
+                textComponent.richText = false;
+                textComponent.raycastTarget = false;
             }
             else
             {
