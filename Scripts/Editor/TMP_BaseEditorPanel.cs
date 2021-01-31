@@ -44,6 +44,7 @@ namespace TMPro.EditorUtilities
         static readonly GUIContent k_LineSpacingLabel = new GUIContent("Line");
         static readonly GUIContent k_ParagraphSpacingLabel = new GUIContent("Paragraph");
         static readonly GUIContent k_KeyLabel = new GUIContent("Key");
+        static readonly GUIContent k_backupColorLabel = new GUIContent("backupColor");
 
         static readonly GUIContent k_AlignmentLabel = new GUIContent("Alignment", "Horizontal and vertical aligment of the text within its container.");
         static readonly GUIContent k_WrapMixLabel = new GUIContent("Wrap Mix (W <-> C)", "How much to favor words versus characters when distributing the text.");
@@ -110,6 +111,7 @@ namespace TMPro.EditorUtilities
         protected int m_StyleSelectionIndex;
 
         protected SerializedProperty m_KeyProp;
+        protected SerializedProperty m_backupColorProp;
         protected SerializedProperty m_FontStyleProp;
 
         protected SerializedProperty m_FontColorProp;
@@ -202,6 +204,7 @@ namespace TMPro.EditorUtilities
             m_CharWidthMaxAdjProp = serializedObject.FindProperty("m_charWidthMaxAdj");
 
             m_KeyProp = serializedObject.FindProperty("m_key");
+            m_backupColorProp = serializedObject.FindProperty("m_backupColor");
             // Colors & Gradient
             m_FontColorProp = serializedObject.FindProperty("m_fontColor");
             m_EnableVertexGradientProp = serializedObject.FindProperty("m_enableVertexGradient");
@@ -469,6 +472,7 @@ namespace TMPro.EditorUtilities
                 }
 
                 EditorGUILayout.PropertyField(m_KeyProp, k_KeyLabel, GUILayout.MinWidth(120f));
+                EditorGUILayout.PropertyField(m_backupColorProp, k_backupColorLabel);
 
                 // TEXT STYLE
                 if (m_StyleNames != null)
