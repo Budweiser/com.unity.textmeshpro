@@ -358,7 +358,7 @@ namespace TMPro
             set { m_backupColor = value; }
         }
         [SerializeField]
-        protected Color32 m_backupColor = "";
+        protected Color32 m_backupColor = Color.white;
 
         /// <summary>
         ///
