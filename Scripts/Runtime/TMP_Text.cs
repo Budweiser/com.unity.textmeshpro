@@ -352,14 +352,6 @@ namespace TMPro
         [SerializeField]
         protected string m_key = "";
 
-        public Color32 backupColor
-        {
-            get { return m_backupColor; }
-            set { m_backupColor = value; }
-        }
-        [SerializeField]
-        protected Color32 m_backupColor = Color.white;
-
         /// <summary>
         ///
         /// </summary>
