@@ -87,7 +87,7 @@ namespace TMPro
             get { return instance.m_EnableRaycastTarget; }
         }
         [SerializeField]
-        private bool m_EnableRaycastTarget = true;
+        private bool m_EnableRaycastTarget = false;
 
         /// <summary>
         /// Determines if OpenType Font Features should be retrieved at runtime from the source font file.
